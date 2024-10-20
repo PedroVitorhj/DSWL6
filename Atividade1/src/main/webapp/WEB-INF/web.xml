@@ -9,4 +9,28 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+   <servlet>
+        <servlet-name>ClienteServlet</servlet-name>
+        <servlet-class>com.exemplo.crud.servlets.ClienteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteServlet</servlet-name>
+        <url-pattern>/clientes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CompraServlet</servlet-name>
+        <servlet-class>com.exemplo.crud.servlets.CompraServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CompraServlet</servlet-name>
+        <url-pattern>/compras</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <servlet-class>com.exemplo.crud.servlets.ProdutoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdutoServlet</servlet-name>
+        <url-pattern>/produtos</url-pattern>
+    </servlet-mapping>
 </web-app>
